@@ -50,7 +50,7 @@ class Drown {
   }
 
   move() {
-    this.y += this.y / 20 + 1;
+    this.y += random(this.y, this.y + 5) / 20 + 1;
     if (this.y > height) {
       this.y = 0;
       this.x = random(20, width - 100);
